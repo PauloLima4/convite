@@ -7,7 +7,7 @@ body {
     margin: 0;
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 250%;
     overflow: hidden; /* Para que os fogos de artifício não gerem rolagem */
 }
 
