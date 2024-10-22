@@ -7,7 +7,7 @@ body {
     margin: 0;
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
-    background-size: 250%;
+    background-size: 100%;
     overflow: hidden; /* Para que os fogos de artifício não gerem rolagem */
 }
 
@@ -17,31 +17,31 @@ body {
     border-radius: 70px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
-    width: 300px;
+    width: 90%;
+    max-width: 400px;
     position: relative;
     overflow: hidden; /* Para garantir que os fogos de artifício não saiam da div */
+    margin: 20px;
 }
 
 h1 {
-    color: #963f38; /* Rosa pastel */
-}
-
-p {
-    color: #000000;
+    color: #963f38;
+    font-size: 1.5rem;
 }
 
 button {
-    background-color: #963f38; /* Rosa pastel */
+    background-color: #963f38;
     color: white;
-    border: none;
+    border: solid black 1px;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 1rem;
 }
 
 button:hover {
-    background-color: #80342f; /* Rosa mais escuro */
+    background-color: #80342f;
 }
 
 .hidden {
@@ -50,7 +50,8 @@ button:hover {
 
 #confirmationMessage {
     margin-top: 20px;
-    color: #32cd32; /* Verde limão pastel */
+    color: #32cd32;
+    font-size: 1rem;
 }
 
 .firework {
@@ -59,7 +60,7 @@ button:hover {
     height: 5px;
     background-color: red;
     border-radius: 50%;
-    animation: explode 1s ease-out forwards;
+    animation: explode 1s ease;
 }
 
 @keyframes explode {
