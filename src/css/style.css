@@ -7,33 +7,33 @@ body {
     margin: 0;
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
-    background-size: cover; /* Ajuste para que a imagem cubra toda a tela */
-    background-attachment: fixed; /* Para a imagem ficar fixa no fundo */
-    background-position: center; /* Centraliza a imagem de fundo */
-    overflow: hidden; /* Para que os fogos de artifício não gerem rolagem */
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
 }
 
 .invitation-container {
     background-color: #fff;
     padding: 20px;
-    border-radius: 20px; /* Deixei o border-radius menor para um design mais sutil */
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 90%;
     max-width: 400px;
     position: relative;
-    overflow: hidden; /* Para garantir que os fogos de artifício não saiam da div */
+    overflow: hidden;
     margin: 20px;
 }
 
 h1 {
     color: #963f38;
-    font-size: 2rem; /* Aumentei o tamanho da fonte */
+    font-size: 2rem;
 }
 
 p {
     color: #333;
-    font-size: 1rem; /* Adicionei a definição de tamanho de fonte */
+    font-size: 1rem;
 }
 
 button {
@@ -80,7 +80,6 @@ button:hover {
     }
 }
 
-/* Estilos adicionais para responsividade */
 @media (max-width: 768px) {
     h1 {
         font-size: 1.5rem;
