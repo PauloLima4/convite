@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden; /* Para que os fogos de artifício não gerem rolagem */
+}
+
+.invitation-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+    position: relative;
+    overflow: hidden; /* Para garantir que os fogos de artifício não saiam da div */
+}
+
+h1 {
+    color: #963f38; /* Rosa pastel */
+}
+
+p {
+    color: #000000;
+}
+
+button {
+    background-color: #963f38; /* Rosa pastel */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #80342f; /* Rosa mais escuro */
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    color: #32cd32; /* Verde limão pastel */
+}
+
+.firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    animation: explode 1s ease-out forwards;
+}
+
+@keyframes explode {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(5) translateY(100px);
+    }
+}
