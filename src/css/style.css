@@ -3,18 +3,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover; /* Ajuste para que a imagem cubra toda a tela */
+    background-attachment: fixed; /* Para a imagem ficar fixa no fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
     overflow: hidden; /* Para que os fogos de artifício não gerem rolagem */
 }
 
 .invitation-container {
     background-color: #fff;
     padding: 20px;
-    border-radius: 70px;
+    border-radius: 20px; /* Deixei o border-radius menor para um design mais sutil */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 90%;
@@ -26,7 +28,12 @@ body {
 
 h1 {
     color: #963f38;
-    font-size: 1.5rem;
+    font-size: 2rem; /* Aumentei o tamanho da fonte */
+}
+
+p {
+    color: #333;
+    font-size: 1rem; /* Adicionei a definição de tamanho de fonte */
 }
 
 button {
@@ -70,5 +77,45 @@ button:hover {
     100% {
         opacity: 0;
         transform: scale(5) translateY(100px);
+    }
+}
+
+/* Estilos adicionais para responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .invitation-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .invitation-container {
+        padding: 10px;
+        border-radius: 10px;
     }
 }
